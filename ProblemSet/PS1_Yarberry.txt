@@ -1,0 +1,23 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{PS1}
+\author{Megan Yarberry }
+\date{January 21, 2020}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+I have a passion for economics, finance, statistics, sports, data analytics, and data science.  A got a bachelor's degree from Robert Morris (Pittsburgh, PA) with a concentration in finance and a minor in economics. It was at the end of my course load that I found this passion for data science and data analytics, especially in the sports industry. I followed that passion to the University of Oklahoma to continue my education to a higher level. I took this class for a better understanding of data science but also because it was highly recommended by previous students. I have a few ideas of what I want to do for my final project. I would like my project to revolve around my thesis along with my internship with the athletic department. I think it would be interesting to look at the characteristics of donor donations (giving) to a program and what attributes contribute to how much a donor donates per year. My goal for this class is to continue to learn how to code at a higher level and obtain skill-sets to be able to use post-graduation. My post-graduation goal is to obtain a job in the sports industry with a team on the business side of operations doing analytics for more financial and economics sides of things, such as ticket sales, marketing, and advertising. 
+
+
+\section{Equation}
+\[a^2 + b^2 = c^2\]
+
+
+\end{document}
