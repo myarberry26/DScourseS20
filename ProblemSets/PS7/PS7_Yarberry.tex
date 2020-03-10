@@ -1,0 +1,88 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{PS7 Yarberry}
+\author{Megan N. Yarberry }
+\date{March 10, 2020}
+
+\begin{document}
+
+\maketitle
+
+\section{Question 6}
+\begin{table}[!htbp] \centering 
+  \caption{} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}ccccccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+Statistic & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Pctl(25)} & \multicolumn{1}{c}{Pctl(75)} & \multicolumn{1}{c}{Max} \\ 
+\hline \\[-1.8ex] 
+logwage & 1,669 & 1.625 & 0.386 & 0.005 & 1.362 & 1.936 & 2.261 \\ 
+hgc & 2,229 & 13.101 & 2.524 & 0 & 12 & 15 & 18 \\ 
+tenure & 2,229 & 5.971 & 5.507 & 0.000 & 1.583 & 9.333 & 25.917 \\ 
+age & 2,229 & 39.152 & 3.062 & 34 & 36 & 42 & 46 \\ 
+\hline \\[-1.8ex] 
+\end{tabular} 
+\end{table} 
+At what rate are log wages missing? 
+\begin{itemize}
+\item Over 25 percent of logwage data is missing
+\end{itemize}
+
+
+Do you think the logwage variable is most likely to be MCAR, MAR, or MNAR?
+\begin{itemize}
+\item MAR ~ able to determine the data using a regression set and the current available data at hand 
+\end{itemize}
+
+
+\section{Question 7}
+\begin{table}[!htbp] \centering 
+  \caption{Regression Results} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{3}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-4} 
+\\[-1.8ex] & \multicolumn{3}{c}{logwage} \\ 
+\\[-1.8ex] & (1) & (2) & (3)\\ 
+\hline \\[-1.8ex] 
+ hgc & 0.062$^{***}$ & 0.049$^{***}$ & 0.062$^{***}$ \\ 
+  & (0.005) & (0.004) & (0.004) \\ 
+  & & & \\ 
+ collegenot college grad & 0.146$^{***}$ & 0.160$^{***}$ & 0.146$^{***}$ \\ 
+  & (0.035) & (0.026) & (0.025) \\ 
+  & & & \\ 
+ tenure & 0.023$^{***}$ & 0.015$^{***}$ & 0.023$^{***}$ \\ 
+  & (0.002) & (0.001) & (0.001) \\ 
+  & & & \\ 
+ age & $-$0.001 & $-$0.001 & $-$0.001 \\ 
+  & (0.003) & (0.002) & (0.002) \\ 
+  & & & \\ 
+ marriedsingle & $-$0.024 & $-$0.029$^{**}$ & $-$0.024$^{*}$ \\ 
+  & (0.018) & (0.014) & (0.013) \\ 
+  & & & \\ 
+ Constant & 0.639$^{***}$ & 0.833$^{***}$ & 0.639$^{***}$ \\ 
+  & (0.146) & (0.115) & (0.111) \\ 
+  & & & \\ 
+\hline \\[-1.8ex] 
+Observations & 1,669 & 2,229 & 2,229 \\ 
+R$^{2}$ & 0.195 & 0.132 & 0.268 \\ 
+Adjusted R$^{2}$ & 0.192 & 0.130 & 0.266 \\ 
+Residual Std. Error & 0.346 (df = 1663) & 0.311 (df = 2223) & 0.300 (df = 2223) \\ 
+F Statistic & 80.508$^{***}$ (df = 5; 1663) & 67.496$^{***}$ (df = 5; 2223) & 162.884$^{***}$ (df = 5; 2223) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
+\end{table} 
+
+The true value of ˆ β1 = 0.093. 
+Based on the following two equations the true value will go up the true value goes up after adding the random missing variables. 
+
+\section{Question 8}
+
+For my final project I have made some slow progress in scrapping the data for my project. I have a clear direct since I want to use something similar to what my thesis is going to be over for my master's program. Now it's just in the process of scrapping that extra data to prove my hypothesis. With everything going on right now with my internship, teaching and my own classes I haven't been able to get very far but look forward to doing some deep diving over spring break when I have a little more time. 
+\end{document}
