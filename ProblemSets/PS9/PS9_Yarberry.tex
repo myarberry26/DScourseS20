@@ -1,0 +1,66 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{PS9 Yarberry}
+\author{Megan N. Yarberry }
+\date{March 31, 2020}
+
+\begin{document}
+
+\maketitle
+
+\section{Question 5}
+What is the dimension of your training data (housing.train)?
+\begin{itemize}
+\item 404 objects by 648 variables 
+\end{itemize}
+
+\section{Question 6 - LASSO Model}
+What is the optimal value of λ? 
+\begin{itemize} 
+\item 7120.064
+\end{itemize}
+What is the in-sample RMSE?
+\begin{itemize}
+\item  0.1740835
+\end{itemize}
+What is the out-of-sample RMSE (i.e. the RMSE in the test data)?
+\begin{itemize}
+\item 0.1692024
+\end{itemize}
+
+\section{Question 7 - Ridge Regression Model}
+What is the optimal value of λ? 
+\begin{itemize}
+\item 7120.064
+\end{itemize}
+What is the in-sample RMSE?
+\begin{itemize}
+\item 0.1545797
+\end{itemize}
+What is the out-of-sample RMSE (i.e. the RMSE in the test data)?
+\begin{itemize}
+\item 0.1548843
+\end{itemize}
+
+\section{Question 8 - Elastic Net Model}
+What is the optimal value of λ? 
+\begin{itemize}
+\item 0.192089
+\end{itemize}
+What is the in-sample RMSE?
+\begin{itemize}
+\item 0.061
+\end{itemize}
+What is the out-of-sample RMSE (i.e. the RMSE in the test data)?
+\begin{itemize}
+\item 0.202 
+\end{itemize}
+Does the optimal value of α lead you to believe that you should use LASSO or ridge regression for this prediction task?
+\begin{itemize}
+\item It would be better to use the ridge regression model better
+\end{itemize}
+
+\section{Question 9}
+Based on bias-variance tradeoff, estimate a simple linear regression model on the housing.train dataframe. You are more likely to go with the Ridge Regression Model since the in sample and out of sample are the closest. 
+\end{document}
