@@ -1,0 +1,168 @@
+\documentclass[12pt,english]{article}
+\usepackage{mathptmx}
+
+\usepackage{color}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{darkblue}{RGB}{0.,0.,139.}
+
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+
+\usepackage{amsmath}
+\usepackage{amstext}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{lipsum}
+
+\usepackage[authoryear]{natbib}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage[flushleft]{threeparttable}
+\usepackage{graphicx}
+\usepackage[english]{babel}
+\usepackage{pdflscape}
+\usepackage[unicode=true,pdfusetitle,
+ bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+ breaklinks=true,pdfborder={0 0 0},backref=false,
+ colorlinks,citecolor=black,filecolor=black,
+ linkcolor=black,urlcolor=black]
+ {hyperref}
+\usepackage[all]{hypcap} % Links point to top of image, builds on hyperref
+\usepackage{breakurl}    % Allows urls to wrap, including hyperref
+
+\linespread{2}
+
+\begin{document}
+
+\begin{singlespace}
+\title{Analyzing Athletic Donation Patterns at FBS Division 1 University\thanks{Acknowledgements here, if any.}}
+\end{singlespace}
+
+\author{Megan N. Yarberry \thanks{Department of Economics, University of Oklahoma.\
+E-mail~address:~\href{mailto:megan.n.yarberry@ou.edu}{megan.n.yarberry@ou.edu}}}
+
+\date{April 14, 2020}
+
+\maketitle
+
+\begin{abstract}
+\begin{singlespace}
+A short summary of what question the project answers, what methods are used, and any policy (or business) implications from the findings.
+\end{singlespace}
+
+\end{abstract}
+\vfill{}
+
+
+\pagebreak{}
+
+
+\section{Introduction}\label{sec:intro}
+Having athletic programs in colleges gives many students an opportunity outside of the classroom to learn, grow and succeed. In 2019 the NCAA celebrated over 150 years of football and from there the sports and programs have expanded \citet{parlier_2020}. Over 1,200 colleges and universities across the United States have sports teams that compete through the National College Athletic Association (NCAA) on all three divisions \citet{ncaa_2019}. 
+
+To have sports teams compete at a high level is an expensive expenditure and it was reported in the 2018 NCAA Division I Revenues and Expense findings that the mean expenses outweighed the revenue generated \citet{parlier_2020}. Many schools even at the highest level of competition are running a deficit, and the deficit is then accounted for by the school. Only a handful of top-ranked schools from the major five conferences are running on a surplus of revenue \citet{thomas_2019}.
+
+Revenue that is generated is primarily coming from ticket sales, marketing, broadcasting rights, and a small proportion from conference distribution \citet{thomas_2019}. Most revenue that is obtained is coming from largely watched sports such as football, men’s and women’s basketball, and in some cases men’s ice hockey (REF). To differentiate college at the division one level the NCAA breaks it down by if a school has a football team or not if they do, they separate them by how they compete for either the football Championship Subdivision (FCS) or schools that are Football Bowl Subdivision (FBS). Large schools that compete at the FBS can even be broken down further as to if the department runs autonomously from the University. 
+
+Having a football team competing in the FBS is an expensive financial responsibility, with the median total expenses a department endures in one year being 115 million dollars \citet{powell_2019}. Universities are only contributing less than five percent of the total revenue knowing athletics departments are sometimes running a deficit \citet{powell_2019}. Many universities rely on supplementary revenue generators such as donors and alumni to give gifts back to the university to help their student-athletes succeed on the field and in the classroom. Gifts to the athletic department from donors are a major factor financially on running an athletic department, these gifts make up on average around twenty-four percent of the revenue an athletic department might make a year \cite{powell_2019}. 
+
+Fundraising is an important key to keeping athletic departments successful and afloat financially. Many universities across the country are charging a mandatory seat donation in addition to the ticket price for season ticket holders and depending on the location is how much the addition donation is required. By giving this minimum “seat” donation numerous Universities allow you automatically join their society of donors. Through this club they offer incentive to pledge larger gifts to their programs with extra benefits to seating priority, Game Day tailgates, priority to away games tickets and exclusive content of the program’s teams. It was noted in one study that the second largest season why donors donated back to the athletic program was around ticking and seat location \citet{gladden2005toward}. Creating this need to not only get members to renew yearly but to increase members to pledge more than the previous year but enticing members with better allocated season ticket seating.
+
+Directors within the donor club at the University market to their members with emails, phone calls, newsletters, social media and old fashion mail. Lots of time and resources are poured in their members to create renewals and a better atmosphere fans at the college games. Creating the need to help directors in athletic departments better forecast donor behavior, including a predictor of those donors on the fence based on past behaviors and which members need more attention. 
+
+
+\section{Literature Review}\label{sec:litreview}
+It is not a myth that having a winning FBS football program apart from your athletic department can change a University. For a university as a whole having a successful football program can attribute to higher enrolment and applicants the following school year \citet{baumer2019impact}. Higher applicants to a University allow for larger enrollment of the incoming freshman class and an overall increase in revenue for the institution. Having a football team with an increase in win percentage will result in an increase in applicants by 1.1 percent while having a basketball team at the division one level win the National title two years prior will result in a 10 percent increase in applicants to the University \citet{baumer2019impact}. \citet{baumer2019impact} collected data from all 65 schools that compete in Division I football and are a part of the top five conferences, from 2015-2016 including three years in lag. This study was looking at the success of both football and men’s basketball and their impact on the institution on the academic and enrollment side.
+
+\section{Data}\label{sec:data}
+The primary source of data is coming from College Sports Reference, the same one sited an used in the \citet{baumer2019impact}, and I was able to recreate the football data from the GitHub link. Table \ref{tab:descriptives} contains summary statistics.
+
+A few other sources of data I used was scrapping data from USA Today Sports were \citet{berkowitz_varney} compiled and presented the total financial costs of each FBS team. Table \ref{tab:descriptives} contains summary statistics.
+
+
+
+\section{Empirical Methods}\label{sec:methods}
+While my approach explores a number of different approaches, the primary empirical model can be depicted in the following equation:
+
+\begin{equation}
+\label{eq:1}
+Y_{it}=\alpha_{0} + \alpha_{1}Z_{it} + \alpha_{2} X_{it} + \varepsilon,
+\end{equation}
+where $Y_{it}$ is a continuous outcome variable for unit $i$ in year $t$, and $Z_{it}$ are characteristics about the firm at which $i$ is working, while $X_{it}$ are characteristics about $i$. The parameter of interest is $\alpha_{1}$.
+
+
+\section{Research Findings}\label{sec:results}
+The main results are reported in Table \ref{tab:estimates}.
+
+
+\section{Conclusion}\label{sec:conclusion}
+
+
+\vfill
+\pagebreak{}
+\begin{spacing}{1}
+\bibliographystyle{jpe}
+\bibliography{PS11_Yarberry.bib}
+\addcontentsline{toc}{section}{References}
+\end{spacing}
+
+\vfill
+\pagebreak{}
+\clearpage
+
+%========================================
+% FIGURES AND TABLES 
+%========================================
+\section*{Figures and Tables}\label{sec:figTables}
+\addcontentsline{toc}{section}{Figures and Tables}
+%----------------------------------------
+% Figure 1
+%----------------------------------------
+\begin{figure}[ht]
+\centering
+\bigskip{}
+\includegraphics[width=.9\linewidth]{fig1.eps}
+\caption{Figure caption goes here}
+\label{fig:fig1}
+\end{figure}
+
+%----------------------------------------
+% Table 1
+%----------------------------------------
+\begin{table}[ht]
+\caption{Summary Statistics of Variables of Interest}
+\label{tab:descriptives} 
+\centering
+\begin{threeparttable}
+\begin{tabular}{lcccc}
+&&&&\\
+\multicolumn{5}{l}{\emph{Panel A: Summary Statistics for Variables of Interest}}\\
+\toprule
+                                                        & Mean  & Std. Dev. & Min   & Max   \\
+\midrule
+Outcome variable 1                                      & 4.127 & 1.709     & 0.000 & 8.516 \\
+Outcome variable 2                                      & 1.293 & 0.648     & 0.000 & 0.216 \\
+Policy variable                                         & 0.685 & 0.464     & 0.000 & 1.000 \\
+Control variable 1                                      & 0.451 & 0.497     & 0.000 & 1.000 \\
+Control variable 2                                      & 0.322 & 0.467     & 0.000 & 1.000 \\
+&&&&\\
+\multicolumn{5}{l}{\emph{Panel B: Sample Means of Outcome Variables for Subgroups}}\\
+\midrule
+                                                        & Group 1 & Group 2 & Group 3 & Group 4 \\
+\midrule
+Outcome variable 1                                      & 1.782  & 2.181  & 3.749  & 4.127  \\
+Outcome variable 2                                      & 0.824  & 0.971  & 1.215  & 1.693  \\
+\midrule
+$N$                                                     & 25,796 & 75,879 & 37,157 & 33,839 \\
+\bottomrule
+\end{tabular}
+\footnotesize Notes: Put any notes about the table here. Sample size for all variables in Panel A is $N=172,671$.
+\end{threeparttable}
+\end{table}
+
+
+%----------------------------------------
+% Table 2
+%----------------------------------------
+
+
+\end{document}
